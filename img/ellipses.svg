@@ -1,0 +1,13 @@
+<svg width="624" height="700" viewBox="0 0 624 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.2">
+<circle cx="350" cy="350" r="20" stroke="white" stroke-opacity="0.45" stroke-width="20"/>
+<circle cx="350" cy="350" r="60" stroke="white" stroke-opacity="0.4" stroke-width="20"/>
+<circle cx="350" cy="350" r="100" stroke="white" stroke-opacity="0.35" stroke-width="20"/>
+<circle cx="350" cy="350" r="140" stroke="white" stroke-opacity="0.3" stroke-width="20"/>
+<circle cx="350" cy="350" r="180" stroke="white" stroke-opacity="0.25" stroke-width="20"/>
+<circle cx="350" cy="350" r="220" stroke="white" stroke-opacity="0.2" stroke-width="20"/>
+<circle cx="350" cy="350" r="260" stroke="white" stroke-opacity="0.15" stroke-width="20"/>
+<circle cx="350" cy="350" r="300" stroke="white" stroke-opacity="0.1" stroke-width="20"/>
+<circle cx="350" cy="350" r="340" stroke="white" stroke-opacity="0.05" stroke-width="20"/>
+</g>
+</svg>

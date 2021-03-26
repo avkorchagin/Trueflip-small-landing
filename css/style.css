@@ -58,7 +58,7 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  overflow-x: hidden;
+  overflow: hidden;
   font-size: 10px;
   line-height: 15px;
 }
@@ -74,8 +74,10 @@ body {
   font-family: "Museo Sans Cyrl 300", Arial, sans-serif;
   font-size: 1.5rem;
   line-height: 1.5em;
-  background: url("../img/Ellipses.png") #3E2F7A top right no-repeat;
   color: #fff;
+  margin: 0;
+  padding: 0;
+  background: url("../img/ellipses.svg") #3E2F7A center right/100vh no-repeat;
 }
 
 a {
@@ -99,7 +101,18 @@ button {
 }
 
 .promo {
-  padding: 60px 0 90px;
+  display: block;
+  min-height: 100vh;
+  padding: 60px 0 0 0;
+}
+
+.promo__logo {
+  width: 180px;
+  height: 50px;
+}
+
+.promo__logo-img {
+  width: 100%;
 }
 
 .promo__medal {
@@ -108,7 +121,7 @@ button {
   top: 30px;
   width: 160px;
   height: 200px;
-  background: url("../img/icons/medal.svg") top right no-repeat;
+  background: url("../img/icons/medal.svg") center right no-repeat;
 }
 
 .promo__header {
@@ -125,10 +138,10 @@ button {
 }
 
 .promo__hero {
-  position: absolute;
-  right: 10%;
-  width: 478px;
-  height: 720px;
+  position: fixed;
+  bottom: -5px;
+  right: 12%;
+  width: 25vw;
 }
 
 .promo__hero-img {
@@ -142,21 +155,8 @@ button {
   position: inherit;
 }
 
-.promo__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  width: 180px;
-  height: 50px;
-}
-
-.promo__logo-img {
-  width: 100%;
-}
-
 .promo__text {
-  margin-top: 130px;
+  margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,4 +197,26 @@ button {
   font-family: "Museo Sans Cyrl 500", Arial, sans-serif;
   font-size: 21px;
   letter-spacing: 0.1em;
+  margin-top: 40px;
+}
+
+.promo .promo__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 800px;
+  margin-top: 185px;
+}
+
+.promo .promo__item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: 65px;
 }

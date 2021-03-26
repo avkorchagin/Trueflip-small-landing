@@ -1,6 +1,6 @@
 	html {
 		box-sizing: border-box;
-		overflow-x: hidden;
+		overflow: hidden;
 		font-size: 10px;
 		line-height: 15px;
 	}
@@ -15,8 +15,10 @@
 		font-family: $font300;
 		font-size: 1.5rem;
 		line-height: 1.5em;
-		background: url('../img/Ellipses.png') $primColor top right no-repeat;
 		color: #fff;
+		margin: 0;
+		padding: 0;
+		background: url('../img/ellipses.svg')$primColor center right / 100vh no-repeat;
 	}
 
 
@@ -43,7 +45,19 @@
 	}
 
 	.promo {
-		padding: 60px 0 90px;
+		display: block;
+		min-height: 100vh;
+		padding: 60px 0 0 0;
+
+
+		&__logo {
+			width: 180px;
+			height: 50px;
+		}
+
+		&__logo-img {
+			width: 100%;
+		}
 
 		&__medal {
 			position: absolute;
@@ -51,7 +65,7 @@
 			top: 30px;
 			width: 160px;
 			height: 200px;
-			background: url('../img/icons/medal.svg') top right no-repeat;
+			background: url('../img/icons/medal.svg') center right no-repeat;
 		}
 
 		&__header {
@@ -62,11 +76,10 @@
 		}
 
 		&__hero {
-			position: absolute;
-			// top: 25%;
-			right: 10%;
-			width: 478px;
-			height: 720px;
+			position: fixed;
+			bottom: -5px;
+			right: 12%;
+			width: 25vw;
 
 			&-img {
 				width: 100%;
@@ -80,21 +93,8 @@
 
 		}
 
-		&__logo {
-			display: flex;
-			margin: 0 auto;
-			width: 180px;
-			height: 50px;
-		}
-
-		&__logo-img {
-			width: 100%;
-		}
-
-
-
 		&__text {
-			margin-top: 130px;
+			margin-top: 100px;
 			display: flex;
 			justify-content: space-between;
 			align-items: flex-start;
@@ -127,5 +127,23 @@
 			font-family: $font500;
 			font-size: 21px;
 			letter-spacing: 0.1em;
+			margin-top: 40px;
 		}
+
+		.promo {
+
+			&__items {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				max-width: 800px;
+				margin-top: 185px;
+			}
+
+			&__item {
+				display: inline-flex;
+				margin-left: 65px;
+			}
+		}
+
 	}
