@@ -48,7 +48,7 @@
 	.promo {
 		display: block;
 		min-height: 100vh;
-		padding: 60px 0 0 0;
+		padding: 60px 0 90px;
 
 
 		&__logo {
@@ -78,7 +78,7 @@
 
 		&__hero {
 			position: fixed;
-			bottom: -5px;
+			bottom: -1%;
 			right: 12%;
 			width: 25vw;
 
@@ -90,17 +90,16 @@
 
 		&__inner {
 			display: flex;
-			position: inherit;
+			justify-content: space-between;
+			align-items: flex-start;
+			flex-direction: column;
+			min-height: 550px;
+			padding-top: 50px;
 
 		}
 
 		&__text {
-			margin-top: 100px;
-			display: flex;
-			justify-content: space-between;
-			align-items: flex-start;
-			flex-direction: column;
-			min-height: 330px;
+			flex-basis: 70%;
 
 		}
 
@@ -118,6 +117,7 @@
 			font-size: 75px;
 			line-height: 120%;
 			max-width: 570px;
+			margin-top: -10px;
 		}
 
 		&__btn {
@@ -128,22 +128,70 @@
 			font-family: $font500;
 			font-size: 21px;
 			letter-spacing: 0.1em;
-			margin-top: 40px;
+			margin-top: 30px;
 		}
 
 		.promo {
+			padding: 0 0 90px 0;
 
 			&__items {
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
 				max-width: 800px;
-				margin-top: 185px;
+				height: 55px;
+				margin-top: 50px;
+				flex-wrap: wrap;
 			}
 
 			&__item {
+				position: relative;
 				display: inline-flex;
-				margin-left: 65px;
+				padding-left: 65px;
+				flex-basis: 33%;
+				background: url('../img/icons/Ellipse.svg') no-repeat;
+				left: 0;
+				align-items: inherit;
+				height: inherit;
+
+				&.item1::before {
+					content: '1';
+					display: flex;
+					position: absolute;
+					left: 21px;
+					align-items: center;
+					width: 55px;
+					height: 55px;
+					font-family: 'Museo Sans Cyrl 500';
+					font-size: 24px;
+					font-weight: 500;
+				}
+
+				&.item2::before {
+					content: '2';
+					display: flex;
+					position: absolute;
+					left: 21px;
+					align-items: center;
+					width: 55px;
+					height: 55px;
+					font-family: 'Museo Sans Cyrl 500';
+					font-size: 24px;
+					font-weight: 500;
+				}
+
+				&.item3::before {
+					content: '3';
+					display: flex;
+					position: absolute;
+					left: 21px;
+					align-items: center;
+					width: 55px;
+					height: 55px;
+					font-family: 'Museo Sans Cyrl 500';
+					font-size: 24px;
+					font-weight: 500;
+				}
 			}
 		}
 
