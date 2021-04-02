@@ -148,6 +148,21 @@ button {
   width: 25vw;
 }
 
+@media (max-width: 1025px) {
+  .promo__hero {
+    position: fixed;
+    bottom: -1%;
+    right: 3%;
+    width: 25vw;
+  }
+}
+
+@media (max-width: 925px) {
+  .promo__hero {
+    display: none;
+  }
+}
+
 .promo__hero-img {
   width: 100%;
 }
@@ -208,6 +223,8 @@ button {
 }
 
 .promo .promo__items {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,10 +235,26 @@ button {
       -ms-flex-align: center;
           align-items: center;
   max-width: 800px;
-  height: 55px;
   margin-top: 50px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1272px) {
+  .promo .promo__items {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .promo .promo__items {
+    max-width: 650px;
+  }
+}
+
+@media (max-width: 925px) {
+  .promo .promo__items {
+    min-width: 100%;
+  }
 }
 
 .promo .promo__item {
@@ -238,6 +271,7 @@ button {
       -ms-flex-align: inherit;
           align-items: inherit;
   height: inherit;
+  height: 55px;
 }
 
 .promo .promo__item.item1::before {
