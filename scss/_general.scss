@@ -78,7 +78,7 @@
 
 		&__hero {
 			position: absolute;
-			bottom: -60px;
+			bottom: 0;
 			right: 12%;
 
 			@media (max-width: 1272px) {
@@ -159,8 +159,7 @@
 				margin-top: 50px;
 				flex-wrap: wrap;
 
-<<<<<<< HEAD
-				@media (max-width:1274px) {
+				<<<<<<< HEAD @media (max-width:1274px) {
 					max-width: 700px;
 
 				}
@@ -168,73 +167,72 @@
 				@media (max-width:1025px) {
 					max-width: 686px;
 
-=======
-				@media (max-width:1272px) {
-					max-width: 700px;
+					=======@media (max-width:1272px) {
+						max-width: 700px;
+					}
+
+					@media (max-width:1199px) {
+						max-width: 650px;
+					}
+
+					@media (max-width:925px) {
+						min-width: 100%;
+						>>>>>>>101911b90b7f9e64eb9b73d711d4fd00235d3d44
+					}
 				}
 
-				@media (max-width:1199px) {
-					max-width: 650px;
-				}
+				&__item {
+					position: relative;
+					display: inline-flex;
+					padding-left: 65px;
+					flex-basis: 30%;
+					background: url('../img/icons/Ellipse.svg') no-repeat;
+					left: 0;
+					align-items: inherit;
+					height: inherit;
+					height: 55px;
+					width: 255px;
+					margin-right: 10px;
 
-				@media (max-width:925px) {
-					min-width: 100%;
->>>>>>> 101911b90b7f9e64eb9b73d711d4fd00235d3d44
+					&.item1::before {
+						content: '1';
+						display: flex;
+						position: absolute;
+						left: 21px;
+						align-items: center;
+						width: 55px;
+						height: 55px;
+						font-family: 'Museo Sans Cyrl 500';
+						font-size: 24px;
+						font-weight: 500;
+					}
+
+					&.item2::before {
+						content: '2';
+						display: flex;
+						position: absolute;
+						left: 21px;
+						align-items: center;
+						width: 55px;
+						height: 55px;
+						font-family: 'Museo Sans Cyrl 500';
+						font-size: 24px;
+						font-weight: 500;
+					}
+
+					&.item3::before {
+						content: '3';
+						display: flex;
+						position: absolute;
+						left: 21px;
+						align-items: center;
+						width: 55px;
+						height: 55px;
+						font-family: 'Museo Sans Cyrl 500';
+						font-size: 24px;
+						font-weight: 500;
+					}
 				}
 			}
 
-			&__item {
-				position: relative;
-				display: inline-flex;
-				padding-left: 65px;
-				flex-basis: 30%;
-				background: url('../img/icons/Ellipse.svg') no-repeat;
-				left: 0;
-				align-items: inherit;
-				height: inherit;
-				height: 55px;
-				width: 255px;
-				margin-right: 10px;
-
-				&.item1::before {
-					content: '1';
-					display: flex;
-					position: absolute;
-					left: 21px;
-					align-items: center;
-					width: 55px;
-					height: 55px;
-					font-family: 'Museo Sans Cyrl 500';
-					font-size: 24px;
-					font-weight: 500;
-				}
-
-				&.item2::before {
-					content: '2';
-					display: flex;
-					position: absolute;
-					left: 21px;
-					align-items: center;
-					width: 55px;
-					height: 55px;
-					font-family: 'Museo Sans Cyrl 500';
-					font-size: 24px;
-					font-weight: 500;
-				}
-
-				&.item3::before {
-					content: '3';
-					display: flex;
-					position: absolute;
-					left: 21px;
-					align-items: center;
-					width: 55px;
-					height: 55px;
-					font-family: 'Museo Sans Cyrl 500';
-					font-size: 24px;
-					font-weight: 500;
-				}
-			}
 		}
-
-	}
