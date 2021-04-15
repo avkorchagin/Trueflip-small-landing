@@ -104,9 +104,13 @@
 			height: 80vh;
 			padding-top: 130px;
 
-		}
+			@media (max-width:925px) {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
 
-		// &__text {}
+		}
 
 		&__title {
 			font-family: $font700;
@@ -123,6 +127,14 @@
 			line-height: 120%;
 			max-width: 570px;
 			margin-top: -10px;
+
+			@media (max-width:1100px) {
+				font-size: 70px;
+			}
+
+			@media (max-width:1024px) {
+				font-size: 60px;
+			}
 		}
 
 		&__btn {
@@ -156,8 +168,18 @@
 					max-width: 650px;
 				}
 
+				@media (max-width:1024px) {
+					font-size: 12px;
+				}
+
 				@media (max-width:925px) {
 					min-width: 100%;
+				}
+
+				@media (max-width:767.98px) {
+					flex-direction: column;
+					font-size: 15px;
+					gap: 20px;
 				}
 			}
 
@@ -172,7 +194,12 @@
 				height: inherit;
 				height: 55px;
 				width: 255px;
-				margin-right: 10px;
+				gap: 10px;
+
+				@media (max-width:767.98px) {
+					gap: initial;
+					flex-basis: initial;
+				}
 
 				&.item1::before {
 					content: '1';
